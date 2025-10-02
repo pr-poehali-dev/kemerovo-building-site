@@ -68,23 +68,7 @@ const Index = () => {
     },
   ];
 
-  const team = [
-    {
-      name: "Алексей Иванов",
-      position: "Прораб",
-      experience: "15 лет опыта",
-    },
-    {
-      name: "Дмитрий Петров",
-      position: "Инженер",
-      experience: "12 лет опыта",
-    },
-    {
-      name: "Сергей Соколов",
-      position: "Бригадир",
-      experience: "10 лет опыта",
-    },
-  ];
+
 
   const reviews = [
     {
@@ -134,9 +118,7 @@ const Index = () => {
               <a href="#about" className="hover:text-primary transition-colors">
                 О нас
               </a>
-              <a href="#team" className="hover:text-primary transition-colors">
-                Команда
-              </a>
+
               <a
                 href="#reviews"
                 className="hover:text-primary transition-colors"
@@ -290,29 +272,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="team" className="py-20 px-4 bg-gray-100">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-            Наша команда
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-8">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" size={48} className="text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2">
-                    {member.position}
-                  </p>
-                  <p className="text-muted-foreground">{member.experience}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section id="reviews" className="py-20 px-4">
         <div className="container mx-auto">
